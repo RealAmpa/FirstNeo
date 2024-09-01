@@ -1,4 +1,4 @@
-package com.ampa.FirstNeo;
+package com.ampa.firstneo;
 
 import java.util.List;
 import java.util.Set;

@@ -1,7 +1,7 @@
-package com.ampa.FirstNeo.content.block;
+package com.ampa.firstneo.content.block;
 
-import com.ampa.FirstNeo.FirstNeo;
-import com.ampa.FirstNeo.content.item.ModItems;
+import com.ampa.firstneo.FirstNeo;
+import com.ampa.firstneo.content.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

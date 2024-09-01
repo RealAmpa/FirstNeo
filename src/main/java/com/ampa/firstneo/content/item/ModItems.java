@@ -1,6 +1,6 @@
-package com.ampa.FirstNeo.content.item;
+package com.ampa.firstneo.content.item;
 
-import com.ampa.FirstNeo.FirstNeo;
+import com.ampa.firstneo.FirstNeo;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;

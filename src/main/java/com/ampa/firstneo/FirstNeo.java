@@ -1,7 +1,7 @@
-package com.ampa.FirstNeo;
+package com.ampa.firstneo;
 
-import com.ampa.FirstNeo.content.block.ModBlocks;
-import com.ampa.FirstNeo.content.item.ModItems;
+import com.ampa.firstneo.content.block.ModBlocks;
+import com.ampa.firstneo.content.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
