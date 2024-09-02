@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "uranium",
+  "ingredient": {
+    "item": "firstneo:deepslate_uranium_ore"
+  },
+  "result": "firstneo:uranium_ingot"
+}

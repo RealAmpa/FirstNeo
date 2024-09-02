@@ -1,5 +1,6 @@
 package com.ampa.firstneo;
 
+import com.ampa.firstneo.content.ModCreativeModeTab;
 import com.ampa.firstneo.content.block.ModBlocks;
 import com.ampa.firstneo.content.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,6 +40,7 @@ public class FirstNeo
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        ModCreativeModeTab.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -60,6 +62,8 @@ public class FirstNeo
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.URANIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_URANIUM_ORE);
+            event.accept(ModBlocks.BLOCK_OF_URANIUM);
         }
     }
 

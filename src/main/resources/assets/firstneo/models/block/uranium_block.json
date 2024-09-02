@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "firstneo:block/block_of_uranium"
+    "all": "firstneo:block/uranium_block"
   }
 }
