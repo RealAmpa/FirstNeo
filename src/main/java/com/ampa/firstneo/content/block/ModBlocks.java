@@ -1,6 +1,7 @@
 package com.ampa.firstneo.content.block;
 
 import com.ampa.firstneo.FirstNeo;
+import com.ampa.firstneo.content.block.fn_blocks.HotBlock;
 import com.ampa.firstneo.content.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -28,12 +29,17 @@ public class ModBlocks {
                     .strength(4.5f, 3.0f).sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<Block> BLOCK_OF_URANIUM = registerBlock("uranium_block",
+    public static final DeferredBlock<Block> URANIUM_BLOCK = registerBlock("uranium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5.0f, 6.0f).sound(SoundType.METAL)
                     .requiresCorrectToolForDrops()));
 
-    // Helper methods
+    public static final DeferredBlock<Block> HOT_BLOCK = registerBlock("hot_block",
+            () -> new HotBlock(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 3.0f).sound(SoundType.NETHERRACK)
+                    .requiresCorrectToolForDrops()));
+
+    // --- Helper methods ---
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "firstneo:uranium_ore",
+    "firstneo:deepslate_uranium_ore",
+    "firstneo:uranium_block"
+  ]
+}

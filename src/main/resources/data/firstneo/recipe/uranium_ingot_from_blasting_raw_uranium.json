@@ -7,5 +7,7 @@
   "ingredient": {
     "item": "firstneo:raw_uranium"
   },
-  "result": "firstneo:uranium_ingot"
+  "result": {
+    "id": "firstneo:uranium_ingot"
+  }
 }

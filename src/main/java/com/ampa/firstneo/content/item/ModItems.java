@@ -1,7 +1,7 @@
 package com.ampa.firstneo.content.item;
 
 import com.ampa.firstneo.FirstNeo;
-import com.ampa.firstneo.content.item.fn_items.UraniumReplacer;
+import com.ampa.firstneo.content.item.fn_items.UraniumReplacerItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,7 +15,7 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> URANIUM_REPLACER = ITEMS.register("uranium_replacer",
-            () -> new UraniumReplacer(new Item.Properties()));
+            () -> new UraniumReplacerItem(new Item.Properties().durability(64)));
 
 
     public static void register(IEventBus eventBus) {

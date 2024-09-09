@@ -18,7 +18,7 @@ public class ModCreativeModeTab {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstNeo.MOD_ID);
 
     public static final Supplier<CreativeModeTab> FN_ITEMS_TAB = CREATIVE_MODE_TAB.register("fn_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.URANIUM_ORE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.URANIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.firstneo.fn_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                        output.accept(ModItems.RAW_URANIUM);
@@ -34,7 +34,8 @@ public class ModCreativeModeTab {
                     .displayItems((itemDisplayParameters, output) -> {
                        output.accept(ModBlocks.URANIUM_ORE);
                        output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE);
-                       output.accept(ModBlocks.BLOCK_OF_URANIUM);
+                       output.accept(ModBlocks.URANIUM_BLOCK);
+                       output.accept(ModBlocks.HOT_BLOCK);
 
                     })
                     .build());

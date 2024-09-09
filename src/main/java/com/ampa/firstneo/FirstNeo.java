@@ -63,7 +63,7 @@ public class FirstNeo
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.URANIUM_ORE);
             event.accept(ModBlocks.DEEPSLATE_URANIUM_ORE);
-            event.accept(ModBlocks.BLOCK_OF_URANIUM);
+            event.accept(ModBlocks.URANIUM_BLOCK);
         }
     }
 
